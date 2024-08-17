@@ -13,6 +13,7 @@ const App = () => {
   const { currentRole } = useSelector(state => state.user);
 
   return (
+    <React.Fragment>
     <Router>
       {currentRole === null &&
         <Routes>
@@ -47,6 +48,7 @@ const App = () => {
         </>
       }
     </Router>
+    </React.Fragment>
   )
 }
 

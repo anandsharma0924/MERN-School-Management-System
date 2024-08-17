@@ -21,7 +21,7 @@ const Popup = ({ message, setShowPopup, showPopup }) => {
     };
 
     return (
-        <>
+        <React.Fragment>
             <Snackbar open={showPopup} autoHideDuration={2000} onClose={handleClose} anchorOrigin={{ vertical, horizontal }} key={vertical + horizontal}>
                 {
                     (message === "Done Successfully") ?
@@ -34,7 +34,7 @@ const Popup = ({ message, setShowPopup, showPopup }) => {
                         </Alert>
                 }
             </Snackbar>
-        </>
+        </React.Fragment>
     );
 };
 

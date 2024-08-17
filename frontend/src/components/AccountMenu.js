@@ -18,7 +18,7 @@ const AccountMenu = () => {
         setAnchorEl(null);
     };
     return (
-        <>
+        <React.Fragment>
             <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
                 <Tooltip title="Account settings">
                     <IconButton
@@ -70,7 +70,7 @@ const AccountMenu = () => {
                     </Link>
                 </MenuItem>
             </Menu>
-        </>
+        </React.Fragment>
     );
 }
 
